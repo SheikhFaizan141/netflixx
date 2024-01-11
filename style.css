@@ -195,7 +195,7 @@ body {
 /* Header */
 .nf-banner {
 
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url('/assets/poster-2.jpg');
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url('./assets/poster-2.jpg');
     background-position: center;
     background-size: cover;
     background-position: center;
