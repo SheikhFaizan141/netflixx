@@ -332,6 +332,13 @@ div.nf-header-r {
 
     } */
 
+    @media(max-width: 576px) {
+        .nf-header {
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
 }
 
 /* Netflix Hero */
@@ -596,9 +603,12 @@ section.section-qa {
 
 .nf-qa-list {
     background-color: rgb(45 45 45);
-    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    /* transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s; */
     text-align: left;
     overflow: hidden;
+    transition-duration: 250ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
 
 }
 
@@ -744,12 +754,18 @@ section.section-qa {
 
     @media(max-width: 768px) {
         .nf-footer-ul {
-            display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(8, 1fr);
             gap: .15rem;
             margin-block-end: 1rem;
         }
 
+    }
+
+    @media(max-width: 576px) {
+        .nf-footer-ul {
+            gap: .15rem .5rem;
+            margin-block-end: 1rem;
+        }
     }
 }
