@@ -1,14 +1,12 @@
 const accordionBtns = document.querySelectorAll('.nf-qa-btn');
 
 function closeOpenAccords(curElement) {
-    const accordionList = document.querySelectorAll(".nf-qa-answer[data-is-open=\"true\"");
+    const accordionList = document.querySelectorAll(".nf-qa-answer[data-is-open='true'");
 
     for (const accordionDiv of accordionList) {
         const isOpen = accordionDiv.dataset.isOpen;
 
-        // if (event.target.classList) {
-            
-        // }
+        
 
         // if accordion is open other then one already open then close it 
         if (isOpen === "true" && accordionDiv !== curElement) {
@@ -24,7 +22,7 @@ accordionBtns.forEach((accordionBtn) => {
         
         // console.log(event.target);
         // console.log();
-        // Need Fix
+        // Need Fix tem solution 
         if (event.target.classList[0] === "nf-qa-answer") {
             return
         }
